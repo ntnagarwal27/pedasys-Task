@@ -22,7 +22,7 @@ class todolistController extends Controller
       $item->due_date    = $req->due_date;
       $item->reminder    = $req->reminder;
       $item->user_id     = $req->user_id;
-      $item->status      = $req->status;
+      $item->status      = 0;
       $resp = $item->save();
        if($resp){
               return ["Success"=>"Item Saved"];

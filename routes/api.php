@@ -34,10 +34,10 @@ Route::get('todolist',[todolistController::class,'todoList']);
 Route::get('fetch/{param}',[todolistController::class,'fetchItems']);
 
 
-// route to fetch items according tonwork status
+// route to update item info
 Route::put('updateitem',[todolistController::class,'update']);
 
-// route to fetch items according tonwork status
+// route to delete item
 Route::delete('delete/{id}',[todolistController::class,'deleteItem']);
 
 
@@ -45,7 +45,7 @@ Route::delete('delete/{id}',[todolistController::class,'deleteItem']);
 Route::put('updateitemstatus/{id}',[todolistController::class,'updateitemstatus']);
 
 
-// route to mark the status of item as complete
+// route to send reminder email 
 Route::get('reminder',[todolistController::class,'sendEmail']);
 
 
